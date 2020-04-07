@@ -1,0 +1,7 @@
+.test::before {
+  content: url("./image.jpg");
+}
+
+.test::after {
+  content: url("./image.png");
+}
