@@ -7,8 +7,9 @@ export default function IndexPage() {
     <div>
       <div className={styles.test}></div>
       <div>
-        <img src={require("../styles/image.jpg")} />
-        <img src={require("../styles/image.png")} />
+        {['image.jpg', 'image.png'].map((src) => (
+          <img src={require(`../styles/${src}`)} />
+        ))}
       </div>
     </div>
   );
